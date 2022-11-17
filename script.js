@@ -547,7 +547,7 @@ languagePicker.addEventListener('change', () => {
     location.href = '/hu.html';
   } else {
     location.href =
-      'https://gabob-com.translate.goog/burgle/?_x_tr_sch=http&_x_tr_sl=en&_x_tr_tl=' +
+      'https://burgle-bros-generator.harka.com?_x_tr_sch=http&_x_tr_sl=en&_x_tr_tl=' +
       languageCode;
   }
 });
