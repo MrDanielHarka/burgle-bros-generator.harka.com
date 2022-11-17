@@ -1,0 +1,166 @@
+body,
+html {
+  width: 100%;
+}
+
+body {
+  font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', Verdana, Arial,
+    Helvetica, sans-serif;
+  color: black;
+  max-width: 700px;
+  margin: auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.floorContainer {
+  float: left;
+  margin: 10px;
+}
+
+.floor table {
+  height: 100%;
+  width: 100%;
+}
+
+.bank {
+  height: 200px;
+  width: 200px;
+}
+
+.bank td {
+  width: 4%;
+  height: 4%;
+}
+
+.bank td.tile {
+  width: 22%;
+  height: 22%;
+}
+
+.knox {
+  height: 242px;
+  width: 242px;
+}
+
+.knox td {
+  width: 2%;
+  height: 2%;
+}
+
+.knox td.tile {
+  width: 18%;
+  height: 18%;
+}
+
+.harka {
+  width: 240px;
+  height: 240px;
+}
+
+.harka td {
+  width: 0;
+  height: 0;
+}
+
+.harka td.tile {
+  width: 14%;
+  height: 14%;
+}
+
+.harka.floor td.wall {
+  border: none;
+}
+
+.floor td.shaft {
+  background: transparent;
+}
+
+.floor td.tile {
+  background: #c6fcff;
+  /* border: 1px solid #c6fcff; */
+  border-radius: 5px;
+}
+
+.floor td.wall {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button,
+select {
+  border-radius: 5px;
+  border: 2px solid black;
+  background: transparent;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+}
+
+.hidden {
+  display: none;
+}
+
+#job,
+#generate-all-floors,
+#show_heatmap,
+#hide_heatmap,
+.bottom-wrapper,
+footer,
+#burgle_href {
+  margin-left: 0.7rem;
+}
+
+#language-picker {
+  margin-left: 0;
+}
+
+h1 {
+  margin-left: 0.5rem;
+}
+
+summary {
+  cursor: pointer;
+  display: inline-block;
+  transform: scale(1.5);
+}
+
+details {
+  display: inline-block;
+  font-weight: bold;
+}
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+details span {
+  background: -webkit-linear-gradient(45deg, red, orange, green, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  border-top: 2px solid black;
+  padding-top: 1rem;
+  max-width: 500px;
+}
+
+#copied {
+  display: none;
+}

@@ -1,0 +1,34 @@
+{
+  "name": "burgle-bros-generator",
+  "version": "1.0.2",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-nodeunit": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-js-test": "^2.0.3",
+    "mocha": "^5.2.0"
+  },
+  "description": "Burgle Bros game layout generator.",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrdanielharka/burgle-bros-generator.harka.com.git"
+  },
+  "keywords": [
+    "burgle",
+    "bros",
+    "layout",
+    "generator"
+  ],
+  "author": "Bruce Armstrong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrdanielharka/burgle-bros-generator.harka.com/issues"
+  }
+}

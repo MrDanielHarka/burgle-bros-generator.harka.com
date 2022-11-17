@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hu" manifest="cache.manifest">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black translucent"
+    />
+    <meta
+      name="description"
+      content="Burgle Bros Generator. Burgle Bros floors and layouts can be generated with the Burgle Bros floor and layout generator."
+    />
+    <title>Burgle Bros Generátor</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="Burgle Bros Generator" />
+    <meta name="application-name" content="Burgle Bros Generator" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="img/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body onLoad="Burgle.init()">
+    <h1>Burgle Bros Generator</h1>
+    <select id="job" onChange="Burgle.new_job()">
+      <option value="2:4:8">Az Irodai Meló (Bevezető)</option>
+      <option value="3:4:8" selected>A Banki Meló (Alap)</option>
+      <option value="2:5:12">Fort Knox (Expert)</option>
+      <option value="1:7:24">Harka Kastély (Lehetetlen)</option>
+    </select>
+    <div id="floors"></div>
+    <br clear="all" />
+    <div id="burgle_ctrl">
+      <button onClick="Burgle.generate()" id="generate-all-floors">
+        Generate All Floors</button
+      ><br />
+      <button id="show_heatmap" onClick="Burgle.show_heat(true)">
+        Hőtérkép be
+      </button>
+      <button
+        id="hide_heatmap"
+        class="hidden"
+        onClick="Burgle.show_heat(false)"
+      >
+        Hőtérkép ki
+      </button>
+      <details>
+        <summary>?</summary>
+        <span> &nbsp;Veszélyestől a veszélytelenig. </span>
+      </details>
+      <br />
+      <button id="burgle_href">Elrendezés linkjének másolása</button>
+      <div class="bottom-wrapper">
+        <p>
+          Elrendezés megosztása:
+          <br />
+          <a
+            href="#"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            id="share-facebook"
+            >Facebook</a
+          >
+          |
+          <a
+            href="#"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            id="share-pinterest"
+            >Pinterest</a
+          >
+          |
+          <a
+            href="#"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            id="share-email"
+            >Email</a
+          >
+        </p>
+      </div>
+    </div>
+    <footer>
+      <select name="languages" id="language-picker">
+        <option value="en">English</option>
+        <option value="hu" selected>Magyar</option>
+        <option value="es">Español</option>
+        <option value="fr">Française</option>
+        <option value="de">Deutsch</option>
+        <option value="ar">Arabic</option>
+        <option value="ru">Russian</option>
+        <option value="pt">Portuguese</option>
+        <option value="zh">中國人</option>
+        <option value="hi">हिन्दी</option>
+        <option value="google-translate">Google Translate</option>
+      </select>
+      <p>
+        Szerkesztette:
+        <a href="https://daniel.harka.com" target="_blank">daniel.harka.com</a>
+        <br />
+        Eredeti verzió:
+        <a
+          href="http://gabob.com/burgle "
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >gabob.com/burgle</a
+        >
+        <br />
+        Egyéb munkáim:
+        <a href="https://web.harka.com" target="_blank">web.harka.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
